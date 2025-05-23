@@ -12,7 +12,7 @@ function AjouterScore() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('https://tir-backend-gtko.onrender.com//participants')
+    fetch('https://tir-backend-gtko.onrender.com/participants')
       .then(res => res.json())
       .then(setParticipants);
     fetch('https://tir-backend-gtko.onrender.com/epreuves')
@@ -26,7 +26,7 @@ function AjouterScore() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('https://tir-backend-gtko.onrender.com//scores', {
+    const res = await fetch('https://tir-backend-gtko.onrender.com/scores', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(score),
