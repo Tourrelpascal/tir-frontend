@@ -59,7 +59,7 @@ function Home() {
             </button>
           </Link>
 
-          <a href="http://localhost:8000/classement/club/general/pdf" target="_blank" rel="noopener noreferrer">
+          <a href="https://tir-backend-gtko.onrender.com/classement/club/general/pdf" target="_blank" rel="noopener noreferrer">
             <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 px-6 py-3 w-full rounded-lg shadow transition-transform transform hover:scale-105">
               <FaFilePdf /> Export Classement Club PDF
             </button>

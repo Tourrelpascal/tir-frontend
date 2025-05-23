@@ -7,7 +7,7 @@ function Participants() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/participants')
+    fetch('https://tir-backend-gtko.onrender.com/participants')
       .then(response => {
         if (!response.ok) throw new Error('Erreur réseau');
         return response.json();

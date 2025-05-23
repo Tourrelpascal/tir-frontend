@@ -16,7 +16,7 @@ function ClassementParEpreuvePDF() {
 
   const handleDownload = () => {
     if (epreuve) {
-      window.open(`http://localhost:8000/classement/epreuve/${epreuve}/pdf`, "_blank");
+      window.open(`https://tir-backend-gtko.onrender.com/classement/epreuve/${epreuve}/pdf`, "_blank");
     } else {
       alert("Veuillez sélectionner une épreuve.");
     }

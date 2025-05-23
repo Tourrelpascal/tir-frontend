@@ -21,7 +21,7 @@ function AjouterParticipant() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:8000/participants', {
+      const res = await fetch('https://tir-backend-gtko.onrender.com/participants', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(participant),

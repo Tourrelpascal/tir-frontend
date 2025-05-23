@@ -11,7 +11,7 @@ function ClassementEpreuve() {
   useEffect(() => {
     const fetchEpreuves = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/epreuves/");
+        const res = await axios.get("https://tir-backend-gtko.onrender.com/epreuves/");
         console.log("Epreuves reçues :", res.data);
         setEpreuves(res.data);
       } catch (err) {
@@ -28,7 +28,7 @@ function ClassementEpreuve() {
       if (!selectedEpreuve) return;
       try {
         const res = await axios.get(
-          `http://localhost:8000/classement/epreuve/${selectedEpreuve}`
+          `https://tir-backend-gtko.onrender.com/classement/epreuve/${selectedEpreuve}`
         );
         console.log("Classement reçu :", res.data);
         setClassement(res.data);

@@ -12,10 +12,10 @@ function AjouterScore() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:8000/participants')
+    fetch('https://tir-backend-gtko.onrender.com//participants')
       .then(res => res.json())
       .then(setParticipants);
-    fetch('http://localhost:8000/epreuves')
+    fetch('https://tir-backend-gtko.onrender.com/epreuves')
       .then(res => res.json())
       .then(setEpreuves);
   }, []);
@@ -26,7 +26,7 @@ function AjouterScore() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:8000/scores', {
+    const res = await fetch('https://tir-backend-gtko.onrender.com//scores', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(score),

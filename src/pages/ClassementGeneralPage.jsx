@@ -9,7 +9,7 @@ function ClassementGeneralPage() {
   useEffect(() => {
     async function fetchClassement() {
       try {
-        const response = await fetch('http://localhost:8000/classement/general');
+        const response = await fetch('https://tir-backend-gtko.onrender.com/classement/general');
         if (!response.ok) throw new Error('Erreur lors de la récupération des données');
         const data = await response.json();
         setClassement(data);

@@ -7,7 +7,7 @@ const ClassementClubParEpreuve = () => {
 
   useEffect(() => {
     const fetchClassement = async () => {
-      const res = await axios.get(`http://localhost:8000/classement/club/epreuve/${epreuve}`);
+      const res = await axios.get(`https://tir-backend-gtko.onrender.com/classement/club/epreuve/${epreuve}`);
       setClassement(res.data);
     };
     fetchClassement();
